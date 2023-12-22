@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "**/frontmatter.json": "jsonc",
+        "**/.frontmatter/config/*.json": "jsonc",
+        "*.jslib": "javascript",
+        "iostream": "cpp"
+    }
+}

@@ -1,0 +1,2 @@
+#define CMakePractice_VERSION_MAJOR @CMakePractice_VERSION_MAJOR@
+#define CMakePractice_VERSION_MINOR @CMakePractice_VERSION_MINOR@
