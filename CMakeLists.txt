@@ -5,6 +5,15 @@ project(CMakePractice VERSION 1.0 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+set(USE_MYMATH OFF)
+
+add_subdirectory(mathfunc)
+
 add_executable(CMakePractice main.cpp)
 configure_file(config.h.in config.h)
-target_include_directories(CMakePractice PUBLIC "${PROJECT_BINARY_DIR}")
+target_include_directories(CMakePractice
+    PUBLIC 
+    "${PROJECT_BINARY_DIR}"
+    "${PROJECT_SOURCE_DIR}/mathfunc"
+)
+target_link_libraries(CMakePractice PUBLIC PRMath)
